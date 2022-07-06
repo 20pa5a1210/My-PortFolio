@@ -1,8 +1,8 @@
 const express = require('express')
 const path = require('path')
 var router = express.Router()
-
-router.use(express.static('../public'))
+const app = express()
+app.use(express.static('../public'))
 
 router.get('/',(req,res)=>{
     res.sendFile(path.resolve(__dirname,'../view/index.html'))
