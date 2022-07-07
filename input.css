@@ -12,4 +12,20 @@
     .tip{
         @apply rounded-md bg-gray-700 p-1 text-white mb-1
     }
+
+    .cname{
+        @apply sm:text-2xl md:text-4xl m-1 my-4
+    }
+    .college{
+        @apply bg-[#dae2ec]  text-[#617d98] sm:text-base md:text-lg  rounded-md p-2
+    }
+    .year{
+        @apply text-[#324d67] text-xl m-1 my-3 mt-4
+    }
+    .EduDetails{
+        @apply text-[#324d67] sm:text-lg md:text-2xl m-1 my-2
+    }
+    .EduBtn{
+        @apply p-1 m-2 text-xl
+    }
 }

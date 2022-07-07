@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Education</title>
     <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <!-- ! NavBar -->
@@ -72,8 +73,63 @@
 
     </div>
 
+    <!-- ! Education Section -->
+
+    <h1 style="color: rgb(0, 28, 85);" 
+    class="sm:text-4xl md:text-6xl text-center font-mono font-bold m-4">Education</h1>
+
+    <div class="lg:flex justify-center gap-20 edu bg-gray-100">
+        <div class="grid sm:grid-flow-col lg:grid-flow-row p-5 h-max">
+            <button class="EduBtn tab-btn active" data-id="btech">B.Tech</button>
+            <button class="EduBtn tab-btn" data-id="diploma">Diploma</button>
+        </div>
+        <div class="p-5 content active text-left" id="btech">
+            <h1 class="cname">B.Tech. in Information Technology</h1>
+            <span class="college">Vishnu Institute of Technology</span>
+            <h1 class="year">2020-Present</h1>
+            <ul class="EduDetails">
+                <li class="my-3">⚡  I have studied basic software engineering subjects like DS, Algorithms, DBMS, OS, CN, AI etc.   </li>
+                <li class="my-3">⚡  Apart from this, I have done courses on Linux Administration, Full Stack Development.</li>
+            </ul>
+            <div class="text-center my-7">
+                <button class="college" onclick="window.open('https://vishnu.edu.in/')" target="_blank" ">Visit WebSite</button>
+            </div>
+        </div>
+        <!-- ! Diploma -->
+
+        <div class="p-5 content text-left" id="diploma">
+            <h1 class="cname">Diploma in Computer Engineering</h1>
+            <span class="college">Smt B. Seetha Polytechnic</span>
+            <h1 class="year">2016-2019</h1>
+            <ul class="EduDetails">
+                <li class="my-3">⚡  I have studied basic software engineering subjects like C,C++,Java,Computer Fudamentals etc.   </li>
+                <li class="my-3">⚡  Apart from this, I have done courses on Cisco CCNA,MS Office(PowerPoint,Word).</li>
+            </ul>
+            <div class="text-center my-7">
+                <button class="college" onclick="window.open('https://seethapoly.edu.in/');" target="_blank" >Visit WebSite</button>
+            </div>
+        </div>
+    </div>
+        <!-- ! Certifcations -->
+
+        
+        <h1 style="color: rgb(0, 28, 85);" 
+        class="sm:text-4xl md:text-6xl text-center font-mono font-bold m-4">Certifcations</h1>
+
+        <div class="grid grid-flow-col justify-center my-48">
+
+            <div class="text-center bg-gray-700 ">
+                <h1 class="bg-transparent hidden">Certifcate</h1>
+                <img  src="./Vectors/cisco.png" class="hover:opacity-50 cursor-pointer"   height="70px" alt="" srcset="" onclick="window.open('https://seethapoly.edu.in/');" target="_blank" >
+            </div>
+
+        </div>
+
+        <!--  -->
+
 
     <!-- ! JavaScript -->
     <script src="./JS/navbar.js"></script>
+    <script src="./JS/EduTabs.js"></script>
 </body>
 </html>

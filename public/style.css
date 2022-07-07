@@ -26,3 +26,22 @@
 .tooltip:hover .tooltiptext {
     visibility: visible;
   }
+
+
+  .content {
+    display: none;
+  }
+  .tab-btn.active {
+    color: #2caeba;
+    box-shadow: -2px 0 #2caeba;
+  }
+  .content.active {
+    display: block;
+  }
+  
+  @media only screen and (max-width: 800px){
+    .tab-btn.active{
+      box-shadow: 0 2px #2caeba;
+      
+    }
+  }

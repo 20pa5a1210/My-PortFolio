@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "build":"tailwind -i ./input.css -o ./view/main.css -w"
   },
   "keywords": [],
   "author": "",
