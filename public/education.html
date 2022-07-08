@@ -6,61 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Education</title>
     <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <!-- ! NavBar -->
-    <nav class=" top-0 w-full justify-between bg-white shadow-lg p-2 flex">
-        <!-- <div class="flex-row m-1">
-            <img src="./Assets/Screenshot 2022-07-04 233902.jpg"   width="150px"  alt="" srcset="">
-        </div> -->
-        <div class="flex-row text-purple-700 sm:mx-10 lg:mx-20  m-1">
-            <h1 class="text-3xl stroke-purple-700 font-bold font-mono"> < Surya/ ></h1>
+        <!-- ! Navbar -->
+
+        <nav class=" top-0 w-full justify-between bg-white shadow-lg p-2 flex">
+            <!-- <div class="flex-row m-1">
+                <img src="./Assets/Screenshot 2022-07-04 233902.jpg"   width="150px"  alt="" srcset="">
+            </div> -->
+            <div class="flex-row root-color sm:mx-10 lg:mx-20  m-1">
+                <h1 class="text-3xl root-color font-bold font-mono"> < Surya/ ></h1>
+            </div>
+            <div class="text-xl sm:mx-10 lg:mx-20 font-medium  root-color">
+                <ol class="hidden md:flex m-1 ">
+                    <li class="navBtn"><a  href="/home">
+                        <div>Home</div>
+                    </a></li>
+                    <li class="navBtn" ><a href="/education">
+                        <div>Education</div>
+                    </a></li>
+                    <li class="navBtn" ><a href="/projects">
+                        <div>Projects</div>
+                    </a></li>
+                    <li class="navBtn" ><a href="">
+                        <div>Contact</div>
+                    </a></li>
+                    <li class="navBtn" ><a href="">
+                      <div>About Me</div>
+                  </a></li>
+                </ol>
+            </div>
+
+            <!--! social-icons -->
+
+           
+              <!-- ! bar-icon -->
+
+            <div  class=" root-color md:hidden flex-row m-1 cursor-pointer">
+                <!-- <img  src="./bars.svg"  width="30px" alt="" srcset=""> -->
+                <svg xmlns="http://www.w3.org/2000/svg" id="toggle" class="h-9 w-9" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                  </svg>
+            </div>
+
+        </nav>
+
+        <!-- ! Mobile View Nav Container -->
+
+        <div id="navCon" class=" h-64 text-center bg-white hidden md:hidden">
+            <ul class="root-color text-cente cursor-default  text-lg p-2">
+               <a href="/home"> <li  class="m-1 p-2 hover:bg-gray-500 hover:text-white ">Home</li></a>
+               <a href="/education"><li class="m-1  p-2 hover:bg-gray-500 hover:text-white">Education</li></a>
+               <a href="/projects"><li class="m-1  p-2 hover:bg-gray-500 hover:text-white">Project</li></a>
+               <a href="/contact"><li class="m-1  p-2 hover:bg-gray-500 hover:text-white">Contact</li></a>   
+               <a href="/contact"><li class="m-1  p-2 hover:bg-gray-500 hover:text-white">About Me</li></a>   
+            </ul>
         </div>
-        <div class="text-xl sm:mx-10 lg:mx-20 text-purple-700">
-            <ol class="hidden md:flex m-1 ">
-                <li class="navBtn"><a  href="/home">
-                    <div>Home</div>
-                </a></li>
-                <li class="navBtn" ><a href="/education">
-                    <div>Education</div>
-                </a></li>
-                <li class="navBtn" ><a href="/projects">
-                    <div>Projects</div>
-                </a></li>
-                <li class="navBtn" ><a href="">
-                    <div>Contact</div>
-                </a></li>
-                <li class="navBtn" ><a href="">
-                  <div>About Me</div>
-              </a></li>
-            </ol>
-        </div>
-
-        <!--! social-icons -->
-
-       
-          <!-- ! bar-icon -->
-
-        <div  class=" text-purple-700 md:hidden flex-row m-1 cursor-pointer">
-            <!-- <img  src="./bars.svg"  width="30px" alt="" srcset=""> -->
-            <svg xmlns="http://www.w3.org/2000/svg" id="toggle" class="h-9 w-9" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-        </div>
-
-    </nav>
-
-    <!-- ! Mobile View Nav Container -->
-
-    <div id="navCon" class=" h-64 text-center bg-white hidden md:hidden">
-        <ul class="text-purple-500 text-cente cursor-default  text-lg p-2">
-           <a href="/home"> <li  class="m-1 p-2 hover:bg-purple-500 hover:text-white ">Home</li></a>
-           <a href="/education"><li class="m-1  p-2 hover:bg-purple-500 hover:text-white">Education</li></a>
-           <a href="/projects"><li class="m-1  p-2 hover:bg-purple-500 hover:text-white">Project</li></a>
-           <a href="/contact"><li class="m-1  p-2 hover:bg-purple-500 hover:text-white">Contact</li></a>   
-           <a href="/contact"><li class="m-1  p-2 hover:bg-purple-500 hover:text-white">About Me</li></a>   
-        </ul>
-    </div>
 
     <!-- ! Education Section -->
 
@@ -72,8 +74,112 @@
 
     </div>
 
+    <!-- ! Education Section -->
+
+    <h1 style="color: rgb(0, 28, 85);" 
+    class="sm:text-4xl md:text-6xl text-center font-mono font-bold m-4">Education</h1>
+
+    <div class="lg:flex justify-center gap-20 edu bg-gray-100">
+        <div class="grid sm:grid-flow-col lg:grid-flow-row p-5 h-max">
+            <button class="EduBtn tab-btn active" data-id="btech">B.Tech</button>
+            <button class="EduBtn tab-btn" data-id="diploma">Diploma</button>
+        </div>
+        <div class="p-5 content active text-left" id="btech">
+            <h1 class="cname">B.Tech. in Information Technology</h1>
+            <span class="college">Vishnu Institute of Technology</span>
+            <h1 class="year">2020-Present</h1>
+            <ul class="EduDetails">
+                <li class="my-3">⚡  I have studied basic software engineering subjects like DS, Algorithms, DBMS, OS, CN, AI etc.   </li>
+                <li class="my-3">⚡  Apart from this, I have done courses on Linux Administration, Full Stack Development.</li>
+            </ul>
+            <div class="text-center my-7">
+                <button class="college" onclick="window.open('https://vishnu.edu.in/')" target="_blank" ">Visit WebSite</button>
+            </div>
+        </div>
+        <!-- ! Diploma -->
+
+        <div class="p-5 content text-left" id="diploma">
+            <h1 class="cname">Diploma in Computer Engineering</h1>
+            <span class="college">Smt B. Seetha Polytechnic</span>
+            <h1 class="year">2016-2019</h1>
+            <ul class="EduDetails">
+                <li class="my-3">⚡  I have studied basic software engineering subjects like C,C++,Java,Computer Fudamentals etc.   </li>
+                <li class="my-3">⚡  Apart from this, I have done courses on Cisco CCNA,MS Office(PowerPoint,Word).</li>
+            </ul>
+            <div class="text-center my-7">
+                <button class="college" onclick="window.open('https://seethapoly.edu.in/');" target="_blank" >Visit WebSite</button>
+            </div>
+        </div>
+    </div>
+        <!-- ! Certifcations -->
+
+        
+        <h1 style="color: rgb(0, 28, 85);" 
+        class="sm:text-4xl md:text-6xl text-center font-mono font-bold m-4">Certifcations</h1>
+
+           <div class="grid sm:grid-flow-row sm:gap-9 lg:gap-3 lg:grid-cols-3 justify-items-center mx-10  my-10">
+
+            <div class="border  border-gray-200  rounded-md">
+                <div class="container cursor-pointer" onclick="window.open('https://seethapoly.edu.in/');" target="_blank" >
+                    <img src="./Vectors/cisco.png"    alt="Avatar" class="image">
+                    <div class="overlay">
+                      <div class="text">Certifcate</div>
+                    </div>
+                </div>
+                <div class="bg-slate-200 p-2 text-center">
+                    <h1 class="text-xl font-semibold" style="color: rgb(0, 28, 85);">
+                        IT Essentials
+                    </h1>
+                    <h1 class="text-lg font-medium" style="color: rgb(127, 141, 170);" >
+                        - Cisco Networking Academy
+                    </h1>
+                </div>
+            </div>
+
+            <div class="border border-gray-200 rounded-md">
+                <div class="container cursor-pointer" onclick="window.open('https://seethapoly.edu.in/');" target="_blank" >
+                    <img src="./Vectors/cisco.png"   alt="Avatar" class="image">
+                    <div class="overlay">
+                      <div class="text">Certifcate</div>
+                    </div>
+                </div>
+                <div class="bg-slate-200 p-2 text-center">
+                    <h1 class="text-xl font-semibold" style="color: rgb(0, 28, 85);">
+                        IT Essentials
+                    </h1>
+                    <h1 class="text-lg font-medium" style="color: rgb(127, 141, 170);" >
+                        - Cisco Networking Academy
+                    </h1>
+                </div>
+            </div>
+
+            <div class="border border-gray-200 rounded-md">
+                <div class="container cursor-pointer" onclick="window.open('https://seethapoly.edu.in/');" target="_blank" >
+                    <img src="./Vectors/cisco.png"   alt="Avatar" class="image">
+                    <div class="overlay">
+                      <div class="text">Certifcate</div>
+                    </div>
+                </div>
+                <div class="bg-slate-200 p-2 text-center">
+                    <h1 class="text-xl font-semibold" style="color: rgb(0, 28, 85);">
+                        IT Essentials
+                    </h1>
+                    <h1 class="text-lg font-medium" style="color: rgb(127, 141, 170);" >
+                        - Cisco Networking Academy
+                    </h1>
+                </div>
+            </div>
+           </div> 
+
+        <!--  -->
+
+        <h1 class="text-center sm:text-xl md:text-2xl font-mono mt-8 my-4"   style="color: rgb(127, 141, 170);">
+            Coded With❤️By Surya Undapalli
+        </h1>
+
 
     <!-- ! JavaScript -->
     <script src="./JS/navbar.js"></script>
+    <script src="./JS/EduTabs.js"></script>
 </body>
 </html>

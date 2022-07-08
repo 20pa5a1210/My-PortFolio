@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
 *{
     padding: 0%;
     margin: 0%;
@@ -5,43 +6,99 @@
 }
 
 .tooltip {
-    position: relative;
-    display: inline-block;
-  }
+  position: relative;
+  display: inline-block;
+}
 
-  .tooltip .tooltiptext {
-    visibility: hidden;
-    width: 120px;
-    text-align: center;
-   
-
-  
-    position: absolute;
-    z-index: 1;
-    bottom: 100%;
-    left: 50%;
-    margin-left: -60px;
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
 }
 
 .tooltip:hover .tooltiptext {
-    visibility: visible;
-  }
+  visibility: visible;
+}
 
 
-  .content {
-    display: none;
-  }
-  .tab-btn.active {
-    color: #2caeba;
-    box-shadow: -2px 0 #2caeba;
-  }
-  .content.active {
-    display: block;
-  }
+.content {
+  display: none;
+}
+.tab-btn.active {
+  color: #2caeba;
+  box-shadow: -2px 0 #2caeba;
+}
+.content.active {
+  display: block;
+}
   
-  @media only screen and (max-width: 800px){
-    .tab-btn.active{
-      box-shadow: 0 2px #2caeba;
-      
-    }
+@media only screen and (max-width: 800px){
+  .tab-btn.active{
+    box-shadow: 0 2px #2caeba;
+    
   }
+}
+
+
+.container {
+  position: relative;
+  /* width: 50%; */
+  width: 300px;
+}
+
+.image {
+  display: block;
+  width: 300px;
+  height: 110px;
+  padding: 10px 60px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 300px;
+  height: 110px;
+  opacity: 0;
+  transition: all .4s ease-in-out 0s;
+  background: rgba(0,0,0,.7);
+
+
+}
+
+.container:hover .overlay {
+  opacity: 0.5;
+}
+
+.text {
+  color: white;
+  font-size: 25px;
+  font-weight: 500;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: .15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+.root-color{
+  color:  rgb(0, 28, 85);
+}
+
+.project-color{
+  background-color: rgb(166, 225, 250);
+}
