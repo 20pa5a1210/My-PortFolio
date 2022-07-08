@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "build":"tailwind -i ./input.css -o ./view/main.css -w"
+    "build":"tailwind -i ./input.css -o ./view/main.css"
   },
   "keywords": [],
   "author": "",
