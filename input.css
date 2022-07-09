@@ -31,4 +31,7 @@
     .ProjectBtn{
         @apply text-[#dae2ec]  bg-[#617d98] sm:text-base md:text-lg  rounded-md p-2
     }
+    .resume-btn{
+        @apply px-8 py-3 border border-transparent text-lg font-mono font-medium rounded-md  
+    }
 }

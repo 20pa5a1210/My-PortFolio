@@ -8,16 +8,16 @@
     <link rel="stylesheet" href="./main.css">
     <link rel="stylesheet" href="./style.css">
 </head>
-<body>
+<body class="hover-bg">
         <!-- ! Navbar -->
 
-        <nav class=" top-0 w-full justify-between bg-white shadow-lg p-2 flex">
+        <nav class=" top-0 w-full justify-between p-2 flex">
             <!-- <div class="flex-row m-1">
                 <img src="./Assets/Screenshot 2022-07-04 233902.jpg"   width="150px"  alt="" srcset="">
             </div> -->
             <div class="flex-row root-color sm:mx-10 lg:mx-20  m-1">
                 <a href="/">
-                    <h1 class="text-3xl root-color font-bold font-mono"> < Surya/ ></h1>
+                    <h1 class="text-3xl root-color font-bold font-mono my-1"> < Surya/ ></h1>
                   </a>
             </div>
             <div class="text-xl sm:mx-10 lg:mx-20 font-medium  root-color">
@@ -32,10 +32,10 @@
                         <div>Projects</div>
                     </a></li>
                     <li class="navBtn" ><a href="">
-                        <div>Contact</div>
+                        <div>About</div>
                     </a></li>
-                    <li class="navBtn" ><a href="">
-                      <div>About Me</div>
+                    <li class="navBtn" ><a href="/contact">
+                      <div>Contact Me</div>
                   </a></li>
                 </ol>
             </div>
@@ -56,13 +56,13 @@
 
         <!-- ! Mobile View Nav Container -->
 
-        <div id="navCon" class=" h-64 text-center bg-white hidden md:hidden">
+        <div id="navCon" class=" h-64 text-center hover-bg hidden md:hidden">
             <ul class="root-color text-cente cursor-default  text-lg p-2">
                <a href="/"> <li  class="m-1 p-2 hover:bg-gray-500 hover:text-white ">Home</li></a>
                <a href="/education"><li class="m-1  p-2 hover:bg-gray-500 hover:text-white">Education</li></a>
                <a href="/projects"><li class="m-1  p-2 hover:bg-gray-500 hover:text-white">Project</li></a>
                <a href="/contact"><li class="m-1  p-2 hover:bg-gray-500 hover:text-white">Contact</li></a>   
-               <a href="/contact"><li class="m-1  p-2 hover:bg-gray-500 hover:text-white">About Me</li></a>   
+               <a href="/contact"><li class="m-1  p-2 hover:bg-gray-500 hover:text-white">Contact Me</li></a>   
             </ul>
         </div>
 
@@ -81,7 +81,7 @@
     <h1 style="color: rgb(0, 28, 85);" 
     class="sm:text-4xl md:text-6xl text-center font-mono font-bold m-4">Education</h1>
 
-    <div class="lg:flex justify-center gap-20 edu bg-gray-100">
+    <div class="lg:flex justify-center gap-20 edu">
         <div class="grid sm:grid-flow-col lg:grid-flow-row p-5 h-max">
             <button class="EduBtn tab-btn active" data-id="btech">B.Tech</button>
             <button class="EduBtn tab-btn" data-id="diploma">Diploma</button>

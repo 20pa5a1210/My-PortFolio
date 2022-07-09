@@ -17,5 +17,8 @@ router.get('/projects',(req,res)=>{
     res.sendFile(path.resolve(__dirname,'../view/Projects.html'))
 })
 
+router.get('/contact',(req,res)=>{
+    res.sendFile(path.resolve(__dirname,'../view/contact.html'))
+})
 
 module.exports = router
