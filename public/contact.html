@@ -1,150 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Me</title>
-    <link rel="stylesheet" href="./main.css">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
-</head>
-<body class="hover-bg">
-            <!-- ! Navbar -->
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+  </head>
+  <body class="hover-bg">
+    <!-- ! Navbar -->
 
-            <nav class=" top-0 w-full justify-between  p-2 flex">
-                <!-- <div class="flex-row m-1">
+    <nav class="top-0 w-full justify-between p-2 flex">
+      <!-- <div class="flex-row m-1">
                     <img src="./Assets/Screenshot 2022-07-04 233902.jpg"   width="150px"  alt="" srcset="">
                 </div> -->
-                <div class="flex-row root-color sm:mx-10 lg:mx-20  m-1">
-                    <a href="/">
-                        <h1 class="text-3xl root-color font-bold font-mono my-1"> < Surya/ ></h1>
-                      </a>
-                </div>
-                <div class="text-xl sm:mx-10 lg:mx-20 font-normal  root-color">
-                    <ol class="hidden md:flex m-1 ">
-                        <li class="navBtn"><a  href="/">
-                            <div>Home</div>
-                        </a></li>
-                        <li class="navBtn" ><a href="/education">
-                            <div>Education</div>
-                        </a></li>
-                        <li class="navBtn" ><a href="/projects">
-                            <div>Projects</div>
-                        </a></li>
-                        <li class="navBtn" ><a href="">
-                            <div>About</div>
-                        </a></li>
-                        <li class="navBtn" ><a href="/contact">
-                          <div>Contact Me</div>
-                      </a></li>
-                    </ol>
-                </div>
-    
-                <!--! social-icons -->
-    
-               
-                  <!-- ! bar-icon -->
-    
-                <div  class=" root-color md:hidden flex-row m-1 cursor-pointer">
-                    <!-- <img  src="./bars.svg"  width="30px" alt="" srcset=""> -->
-                    <svg xmlns="http://www.w3.org/2000/svg" id="toggle" class="h-9 w-9" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-                      </svg>
-                </div>
-    
-            </nav>
-    
-            <!-- ! Mobile View Nav Container -->
-    
-            <div id="navCon" class=" h-64 text-center hidden md:hidden">
-                <ul class="root-color text-cente cursor-default  text-lg p-2">
-                   <a href="/"> <li  class="m-1 p-2 hover:bg-gray-500 hover:text-white ">Home</li></a>
-                   <a href="/education"><li class="m-1  p-2 hover:bg-gray-500 hover:text-white">Education</li></a>
-                   <a href="/projects"><li class="m-1  p-2 hover:bg-gray-500 hover:text-white">Project</li></a>
-                   <a href="/contact"><li class="m-1  p-2 hover:bg-gray-500 hover:text-white">About</li></a>   
-                   <a href="/contact"><li class="m-1  p-2 hover:bg-gray-500 hover:text-white">Contact Me</li></a>   
-                </ul>
-            </div>
-
-        <!-- ! About Me Section -->
-
-
-        <div class="grid grid-row-2 md:grid-cols-2 m-5">
-
-          <div>
-              <img src="./Vectors/contact_vector.png" alt="" srcset="">
-          </div>
-
-          <div class="text-center my-3 md:py-20">
-
-              <p class="root-color text-2xl md:text-5xl tracking-tight font-mono">Contact Me</p>
-              
-              <p class="light-gray text-base font-medium font-mono tracking-tight my-5 px-5 md:text-xl md:font-bold">
-                I am available on almost every social media. You can message me,
-                I will reply within 24 hours.
-                I can help you with ML, AI, React,
-                 iOS, Cloud and Opensource Development.
-              </p>
-             
-              <ul class="flex justify-center my-2 text-3xl text-purple-600 m-1 social-icons">
-                <li class="m-2">
-                  <a href="https://www.twitter.com">
-                    <i class="fab fa-facebook"></i>
-                  </a>
-                </li>
-                <li class="m-2">
-                  <a href="https://www.twitter.com">
-                    <i class="fab fa-twitter"></i>
-                  </a>
-                </li>
-                <li class="m-2">
-                  <a href="https://www.twitter.com">
-                    <i class="fab fa-instagram"></i>
-                  </a>
-                </li>
-                <li class="m-2">
-                  <a href="https://www.twitter.com">
-                    <i class="fab fa-linkedin"></i>
-                  </a>
-                </li>
-                <li class="m-2">
-                  <a href="https://www.twitter.com">
-                    <i class="fab fa-github"></i>
-                  </a>
-                </li>
-              </ul>    
-               
-              <button class="my-2 hover:bg-[#edf9fe] hover:text-[#001c55] resume-btn bg-resume">See my Resume</button>
-          </div>
+      <div class="flex-row root-color sm:mx-10 lg:mx-20 m-1">
+        <a href="/">
+          <h1 class="text-3xl root-color font-bold font-mono my-1">
+            < Surya/ >
+          </h1>
+        </a>
+      </div>
+      <div class="text-xl sm:mx-10 lg:mx-20 font-normal root-color">
+        <ol class="hidden md:flex m-1">
+          <li class="navBtn">
+            <a href="/">
+              <div>Home</div>
+            </a>
+          </li>
+          <li class="navBtn">
+            <a href="/education">
+              <div>Education</div>
+            </a>
+          </li>
+          <li class="navBtn">
+            <a href="/projects">
+              <div>Projects</div>
+            </a>
+          </li>
+          <li class="navBtn">
+            <a href="">
+              <div>About</div>
+            </a>
+          </li>
+          <li class="navBtn">
+            <a href="/contact">
+              <div>Contact Me</div>
+            </a>
+          </li>
+        </ol>
       </div>
 
-        <div class="grid grid-row-2 md:grid-cols-2 m-5">
+      <!--! social-icons -->
 
-            <div>
-                <img src="./Vectors/7495-removebg.png" alt="" srcset="">
-            </div>
+      <!-- ! bar-icon -->
 
-            <div class="text-center my-3 md:py-20">
+      <div class="root-color md:hidden flex-row m-1 cursor-pointer">
+        <!-- <img  src="./bars.svg"  width="30px" alt="" srcset=""> -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          id="toggle"
+          class="h-9 w-9"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+      </div>
+    </nav>
 
-                <p class="root-color text-2xl md:text-5xl tracking-tight font-mono">Address</p>
-                
-                <p class="light-gray text-base font-medium font-mono tracking-tight my-5 px-5 md:text-xl md:font-bold">
-                    Main Road, Navuduru,Bhimavaram, West Godavari Dist, Andhra Pradesh - 534275
-                </p>
-                
-                <p class="root-color text-2xl md:text-5xl tracking-tight font-mono">Address</p>
+    <!-- ! Mobile View Nav Container -->
 
-                <p class="light-gray text-base font-medium font-mono tracking-tight my-5 px-5 md:text-xl md:font-bold ">
-                    +917032175638
-                </p>
+    <div id="navCon" class="h-64 text-center hidden md:hidden">
+      <ul class="root-color text-cente cursor-default text-lg p-2">
+        <a href="/">
+          <li class="m-1 p-2 hover:bg-gray-500 hover:text-white">Home</li></a
+        >
+        <a href="/education"
+          ><li class="m-1 p-2 hover:bg-gray-500 hover:text-white">
+            Education
+          </li></a
+        >
+        <a href="/projects"
+          ><li class="m-1 p-2 hover:bg-gray-500 hover:text-white">
+            Project
+          </li></a
+        >
+        <a href="/contact"
+          ><li class="m-1 p-2 hover:bg-gray-500 hover:text-white">About</li></a
+        >
+        <a href="/contact"
+          ><li class="m-1 p-2 hover:bg-gray-500 hover:text-white">
+            Contact Me
+          </li></a
+        >
+      </ul>
+    </div>
 
+    <!-- ! About Me Section -->
 
-                <button class="my-2 hover:bg-[#edf9fe] hover:text-[#001c55] resume-btn bg-resume">Visit on Google Maps</button>
+    <div class="grid grid-row-2 md:grid-cols-2 m-5">
+      <div>
+        <img src="./Vectors/contact_vector.png" alt="" srcset="" />
+      </div>
 
-            </div>
+      <div class="text-center my-3 md:py-20">
+        <p class="root-color text-2xl md:text-5xl tracking-tight font-mono">
+          Contact Me
+        </p>
 
-        </div>      
+        <p
+          class="light-gray text-base font-medium font-mono tracking-tight my-5 px-5 md:text-xl md:font-bold"
+        >
+          I am available on almost every social media. You can message me, I
+          will reply within 24 hours. I can help you with ML, AI, React, iOS,
+          Cloud and Opensource Development.
+        </p>
+
+        <ul
+          class="flex justify-center my-2 text-3xl text-purple-600 m-1 social-icons"
+        >
+          <li class="m-2">
+            <a href="https://www.twitter.com">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+          <li class="m-2">
+            <a href="https://www.twitter.com">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li class="m-2">
+            <a href="https://www.twitter.com">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li class="m-2">
+            <a href="https://www.twitter.com">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <li class="m-2">
+            <a href="https://www.twitter.com">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        </ul>
+
+        <button
+          class="my-2 hover:bg-[#edf9fe] hover:text-[#001c55] resume-btn bg-resume"
+        >
+          See my Resume
+        </button>
+      </div>
+    </div>
+
+    <div class="grid grid-row-2 md:grid-cols-2 m-5">
+      <div>
+        <img src="./Vectors/7495-removebg.png" alt="" srcset="" />
+      </div>
+
+      <div class="text-center my-3 md:py-20">
+        <p class="root-color text-2xl md:text-5xl tracking-tight font-mono">
+          Address
+        </p>
+
+        <p
+          class="light-gray text-base font-medium font-mono tracking-tight my-5 px-5 md:text-xl md:font-bold"
+        >
+          Main Road, Navuduru,Bhimavaram, West Godavari Dist, Andhra Pradesh -
+          534275
+        </p>
+
+        <p class="root-color text-2xl md:text-5xl tracking-tight font-mono">
+          Address
+        </p>
+
+        <p
+          class="light-gray text-base font-medium font-mono tracking-tight my-5 px-5 md:text-xl md:font-bold"
+        >
+          +917032175638
+        </p>
+
+        <button
+          class="my-2 hover:bg-[#edf9fe] hover:text-[#001c55] resume-btn bg-resume"
+        >
+          Visit on Google Maps
+        </button>
+      </div>
+    </div>
     <script src="./JS/navbar.js"></script>
-</body>
+  </body>
 </html>
