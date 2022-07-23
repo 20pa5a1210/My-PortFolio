@@ -1,237 +1,333 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="./main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body class="hover-bg">
+    <link rel="stylesheet" href="./main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="hover-bg">
+    <!-- ! Navbar -->
 
-        <!-- ! Navbar -->
-
-        <nav class=" top-0 w-full justify-between p-2 flex">
-            <!-- <div class="flex-row m-1">
+    <nav class="top-0 w-full justify-between p-2 flex">
+      <!-- <div class="flex-row m-1">
                 <img src="./Assets/Screenshot 2022-07-04 233902.jpg"   width="150px"  alt="" srcset="">
             </div> -->
-            <div class="flex-row root-color sm:mx-10 lg:mx-20  m-1">
-              <h1 class="text-3xl root-color my-1 font-bold font-mono"> 
-                <a href="/">
-                  < Surya/ >
-                </a>
-              </h1>
-            </div>
-            <div class="text-xl sm:mx-10 lg:mx-20 font-medium  root-color">
-                <ol class="hidden md:flex m-1 ">
-                    <li class="navBtn"><a  href="/">
-                        <div>Home</div>
-                    </a></li>
-                    <li class="navBtn" ><a href="/education">
-                        <div>Education</div>
-                    </a></li>
-                    <li class="navBtn" ><a href="/projects">
-                        <div>Projects</div>
-                    </a></li>
-                    <li class="navBtn" ><a href="">
-                        <div>About</div>
-                    </a></li>
-                    <li class="navBtn" ><a href="/contact">
-                      <div>Contact Me</div>
-                  </a></li>
-                </ol>
-            </div>
+      <div class="flex-row root-color sm:mx-10 lg:mx-20 m-1">
+        <h1 class="text-3xl root-color my-1 font-bold font-mono">
+          <a href="/"> < Surya/ > </a>
+        </h1>
+      </div>
+      <div class="text-xl sm:mx-10 lg:mx-20 font-medium root-color">
+        <ol class="hidden md:flex m-1">
+          <li class="navBtn">
+            <a href="/">
+              <div>Home</div>
+            </a>
+          </li>
+          <li class="navBtn">
+            <a href="/education">
+              <div>Education</div>
+            </a>
+          </li>
+          <li class="navBtn">
+            <a href="/projects">
+              <div>Projects</div>
+            </a>
+          </li>
+          <li class="navBtn">
+            <a href="">
+              <div>About</div>
+            </a>
+          </li>
+          <li class="navBtn">
+            <a href="/contact">
+              <div>Contact Me</div>
+            </a>
+          </li>
+        </ol>
+      </div>
 
-            <!--! social-icons -->
+      <!--! social-icons -->
 
-           
-              <!-- ! bar-icon -->
+      <!-- ! bar-icon -->
 
-            <div  class=" root-color md:hidden flex-row m-1 cursor-pointer">
-                <!-- <img  src="./bars.svg"  width="30px" alt="" srcset=""> -->
-                <svg xmlns="http://www.w3.org/2000/svg" id="toggle" class="h-9 w-9" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-                  </svg>
-            </div>
+      <div class="root-color md:hidden flex-row m-1 cursor-pointer">
+        <!-- <img  src="./bars.svg"  width="30px" alt="" srcset=""> -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          id="toggle"
+          class="h-9 w-9"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+      </div>
+    </nav>
 
-        </nav>
+    <!-- ! Mobile View Nav Container -->
 
-        <!-- ! Mobile View Nav Container -->
+    <div id="navCon" class="h-64 text-center hover-bg hidden md:hidden">
+      <ul class="root-color text-cente cursor-default text-lg p-2">
+        <a href="/">
+          <li class="m-1 p-2 hover:bg-gray-500 hover:text-white">Home</li></a
+        >
+        <a href="/education"
+          ><li class="m-1 p-2 hover:bg-gray-500 hover:text-white">
+            Education
+          </li></a
+        >
+        <a href="/projects"
+          ><li class="m-1 p-2 hover:bg-gray-500 hover:text-white">
+            Project
+          </li></a
+        >
+        <a href="/contact"
+          ><li class="m-1 p-2 hover:bg-gray-500 hover:text-white">About</li></a
+        >
+        <a href="/contact"
+          ><li class="m-1 p-2 hover:bg-gray-500 hover:text-white">
+            Contact Me
+          </li></a
+        >
+      </ul>
+    </div>
 
-        <div id="navCon" class=" h-64 text-center hover-bg hidden md:hidden">
-            <ul class="root-color text-cente cursor-default  text-lg p-2">
-               <a href="/"> <li  class="m-1 p-2 hover:bg-gray-500 hover:text-white ">Home</li></a>
-               <a href="/education"><li class="m-1  p-2 hover:bg-gray-500 hover:text-white">Education</li></a>
-               <a href="/projects"><li class="m-1  p-2 hover:bg-gray-500 hover:text-white">Project</li></a>
-               <a href="/contact"><li class="m-1  p-2 hover:bg-gray-500 hover:text-white">About</li></a>   
-               <a href="/contact"><li class="m-1  p-2 hover:bg-gray-500 hover:text-white">Contact Me</li></a>   
-            </ul>
+    <!-- ! Landing Page -->
+
+    <div class="grid lg:grid-cols-2 mt-2">
+      <div
+        class="align-middle lg:py-40 text-center rounded-md justify-center p-5"
+      >
+        <h1
+          class="text-4xl md:text-7xl font-bold my-4"
+          style="color: rgb(0, 28, 85)"
+        >
+          Surya Undapalli
+        </h1>
+        <h3
+          class="sm:text-2xl md:text-4xl font-semibold my-4"
+          style="color: rgb(0, 28, 85)"
+        >
+          (Software Developer)
+        </h3>
+        <p
+          class="sm:text-lg md:text-2xl my-4 font-bold font-mono"
+          style="color: rgb(127, 141, 170)"
+        >
+          A passionate individual who always thrive to work on end to end
+          products which develop sustainable and scalable social and technical
+          systems to create impact.
+        </p>
+
+        <ul
+          class="flex justify-center my-2 text-3xl text-purple-600 m-1 social-icons"
+        >
+          <li class="m-2">
+            <a href="https://www.twitter.com">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+          <li class="m-2">
+            <a href="https://www.twitter.com">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li class="m-2">
+            <a href="https://www.twitter.com">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li class="m-2">
+            <a href="https://www.twitter.com">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <li class="m-2">
+            <a href="https://www.twitter.com">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        </ul>
+
+        <button class="my-2 btn">Ping Me</button>
+      </div>
+
+      <div class="rounded-md">
+        <img src="./Vectors/feeling-modified.png" alt="" srcset="" />
+      </div>
+    </div>
+
+    <!-- ! What I Do? -->
+
+    <h1
+      class="text-6xl m-5 text-center font-bold"
+      style="color: rgb(0, 28, 85)"
+    >
+      What I Do?
+    </h1>
+
+    <!-- ! Skills Section -->
+
+    <div class="grid lg:grid-cols-2 text-center justify-center mt-2">
+      <!-- ! image section -->
+      <div class="rounded-md order-last lg:order-first">
+        <img src="./Vectors/v.png" alt="" />
+      </div>
+      <!-- ! content Section -->
+      <div class="lg:py-32 p-10 rounded-md text-center">
+        <h1
+          class="text-4xl md:text-6xl font-semibold"
+          style="color: rgb(0, 28, 85)"
+        >
+          Full Stack Development
+        </h1>
+
+        <div class="flex my-10 justify-center">
+          <div class="tooltip">
+            <img
+              class="w-12 h-12 mx-2"
+              src="./icons/html-5.png"
+              alt=""
+              srcset=""
+            />
+            <span class="tooltiptext tip">HTML</span>
+          </div>
+
+          <div class="tooltip">
+            <img
+              class="w-12 h-12 mx-2"
+              src="./icons/css-3.png"
+              alt=""
+              srcset=""
+            />
+            <span class="tooltiptext tip">CSS</span>
+          </div>
+
+          <div class="tooltip">
+            <img
+              class="w-12 h-12 mx-2 rounded-full"
+              src="./icons/tailwind.png"
+              alt=""
+              srcset=""
+            />
+            <span class="tooltiptext tip">Tailwind CSS</span>
+          </div>
+
+          <div class="tooltip">
+            <img class="w-12 h-12 mx-2" src="./icons/js.png" alt="" srcset="" />
+            <span class="tooltiptext tip">JavaScript</span>
+          </div>
+
+          <div class="tooltip">
+            <img
+              class="w-12 h-12 mx-2"
+              src="./icons/nodejs.png"
+              alt=""
+              srcset=""
+            />
+            <span class="tooltiptext tip">Node</span>
+          </div>
+
+          <div class="tooltip">
+            <img
+              class="w-12 h-12 mx-2"
+              src="./icons/express.png"
+              alt=""
+              srcset=""
+            />
+            <span class="tooltiptext tip">Express</span>
+          </div>
+
+          <div class="tooltip">
+            <img class="w-12 h-12 mx-2" src="./icons/npm" alt="" srcset="" />
+            <span class="tooltiptext tip">NPM</span>
+          </div>
+
+          <div class="tooltip">
+            <img
+              class="w-12 h-12 mx-2"
+              src="./icons/physics.png"
+              alt=""
+              srcset=""
+            />
+            <span class="tooltiptext tip">React</span>
+          </div>
         </div>
 
+        <ul
+          class="sm:text-lg md:text-2xl my-5"
+          style="color: rgb(127, 141, 170)"
+        >
+          <li class="my-2">
+            ⚡ Building resposive website front end using React frameworks
+          </li>
+          <li class="my-2">
+            ⚡ Developing Backend Support for the Frontend using MongoDB with
+            Express JS
+          </li>
+          <li class="my-2">⚡ Creating application backend in Node, Express</li>
+        </ul>
+      </div>
+    </div>
 
-        <!-- ! Landing Page -->
+    <!-- ! Footer -->
 
-        <div class="grid lg:grid-cols-2 mt-2">
-          <div class="align-middle lg:py-40 text-center rounded-md  justify-center p-5">
-              <h1 class="text-4xl md:text-7xl font-bold my-4" style="color:  rgb(0, 28, 85);">
-                Surya Undapalli
-              </h1>
-              <h3 class="sm:text-2xl md:text-4xl font-semibold my-4" style="color: rgb(0, 28, 85);">
-                (Software Developer)
-              </h3>
-              <p class="sm:text-lg md:text-2xl my-4 font-bold font-mono" style="color: rgb(127, 141, 170);">
-                A passionate individual who always thrive to work on end to end products
-                 which develop sustainable and scalable social and technical systems 
-                 to create impact.
-              </p>
+    <footer>
+      <div class="grid justify-center mt-1 w-full pt-8 bg-gray-700 mb-0">
+        <ul
+          class="flex justify-center my-4 text-3xl text-purple-600 m-1 social-icons"
+        >
+          <li class="m-2">
+            <a href="https://www.twitter.com">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+          <li class="m-2">
+            <a href="https://www.twitter.com">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li class="m-2">
+            <a href="https://www.twitter.com">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li class="m-2">
+            <a href="https://www.twitter.com">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <li class="m-2">
+            <a href="https://www.twitter.com">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        </ul>
 
-              <ul class="flex justify-center my-2 text-3xl text-purple-600 m-1 social-icons">
-                <li class="m-2">
-                  <a href="https://www.twitter.com">
-                    <i class="fab fa-facebook"></i>
-                  </a>
-                </li>
-                <li class="m-2">
-                  <a href="https://www.twitter.com">
-                    <i class="fab fa-twitter"></i>
-                  </a>
-                </li>
-                <li class="m-2">
-                  <a href="https://www.twitter.com">
-                    <i class="fab fa-instagram"></i>
-                  </a>
-                </li>
-                <li class="m-2">
-                  <a href="https://www.twitter.com">
-                    <i class="fab fa-linkedin"></i>
-                  </a>
-                </li>
-                <li class="m-2">
-                  <a href="https://www.twitter.com">
-                    <i class="fab fa-github"></i>
-                  </a>
-                </li>
-              </ul>
+        <p
+          class="text-center sm:text-lg md:text-2xl mt-2 pb-8"
+          style="color: rgb(127, 141, 170)"
+        >
+          &copy; 2022 Surya Undapalli. All Rights Reserved
+        </p>
+      </div>
+    </footer>
 
-          <button class="my-2 btn">Ping Me</button>
-
-          </div>
-          
-          <div class="rounded-md">
-              <img src="./Vectors/feeling-modified.png" alt="" srcset="">
-          </div>
-        </div>
-
-        <!-- ! What I Do? -->
-        
-        <h1 class="text-6xl m-5 text-center font-bold" style="color:  rgb(0, 28, 85);">What I Do?</h1>
-        
-        <!-- ! Skills Section -->
-
-        <div class="grid lg:grid-cols-2 text-center justify-center mt-2">
-          <!-- ! image section -->
-          <div class="rounded-md order-last lg:order-first">
-            <img src="./Vectors/v.png"  alt="">
-          </div>
-          <!-- ! content Section -->
-          <div class="lg:py-32  p-10 rounded-md text-center">
-
-            <h1 class="text-4xl md:text-6xl font-semibold " style="color:  rgb(0, 28, 85);">Full Stack Development</h1>
-   
-            <div class="flex my-10 justify-center">
-
-              <div class="tooltip">
-                <img class="w-12 h-12 mx-2" src="./icons/html-5.png"  alt="" srcset="">
-                <span class="tooltiptext tip">HTML</span>
-              </div>
-
-              <div class="tooltip">
-                <img class="w-12 h-12 mx-2" src="./icons/css-3.png"  alt="" srcset="">
-                <span class="tooltiptext tip">CSS</span>
-              </div>
-
-              <div class="tooltip">
-                <img class="w-12 h-12 mx-2 rounded-full" src="./icons/tailwind.png"  alt="" srcset="">
-                <span class="tooltiptext tip">Tailwind CSS</span>
-              </div>
-              
-              <div class="tooltip">
-                <img class="w-12 h-12 mx-2" src="./icons/js.png"  alt="" srcset="">
-                <span class="tooltiptext tip">JavaScript</span>
-              </div>
-
-              <div class="tooltip">
-                <img class="w-12 h-12 mx-2" src="./icons/nodejs.png"  alt="" srcset="">
-                <span class="tooltiptext tip">Node</span>
-              </div>
-
-              <div class="tooltip">
-                <img class="w-12 h-12 mx-2" src="./icons/express.png"  alt="" srcset="">
-                <span class="tooltiptext tip">Express</span>
-              </div>
-
-              <div class="tooltip">
-                <img class="w-12 h-12 mx-2" src="./icons/npm"  alt="" srcset="">
-                <span class="tooltiptext tip">NPM</span>
-              </div>
-
-              <div class="tooltip">
-                <img class="w-12 h-12 mx-2" src="./icons/physics.png"  alt="" srcset="">
-                <span class="tooltiptext tip">React</span>
-              </div>
-
-            </div>
-
-            <ul class="sm:text-lg md:text-2xl my-5" style="color: rgb(127, 141, 170);">
-              <li class="my-2">⚡ Building resposive website front end using React frameworks</li>
-              <li class="my-2">⚡ Developing Backend Support for the Frontend using MongoDB with Express JS</li>
-              <li class="my-2">⚡ Creating application backend in Node, Express</li>
-            </ul>
-            
-          </div>
-        </div>
-
-        <!-- ! Footer -->
-
-        <footer>
-          <div class="grid justify-center mt-1 w-full pt-8 bg-gray-700 mb-0">
-
-            <ul class="flex justify-center my-4 text-3xl text-purple-600 m-1 social-icons">
-              <li class="m-2">
-                <a href="https://www.twitter.com">
-                  <i class="fab fa-facebook"></i>
-                </a>
-              </li>
-              <li class="m-2">
-                <a href="https://www.twitter.com">
-                  <i class="fab fa-twitter"></i>
-                </a>
-              </li>
-              <li class="m-2">
-                <a href="https://www.twitter.com">
-                  <i class="fab fa-instagram"></i>
-                </a>
-              </li>
-              <li class="m-2">
-                <a href="https://www.twitter.com">
-                  <i class="fab fa-linkedin"></i>
-                </a>
-              </li>
-              <li class="m-2">
-                <a href="https://www.twitter.com">
-                  <i class="fab fa-github"></i>
-                </a>
-              </li>
-            </ul>
-
-            <p class="text-center sm:text-lg md:text-2xl mt-2 pb-8"  style="color: rgb(127, 141, 170);">&copy; 2022 Surya Undapalli. All Rights Reserved</p>
-
-          </div>
-        </footer>
-
-        <!-- ! JavaScript  -->
-        <script src="./JS/navbar.js"></script>
-</body>
+    <!-- ! JavaScript  -->
+    <script src="./JS/navbar.js"></script>
+  </body>
 </html>

@@ -1,92 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projects</title>
-    <link rel="stylesheet" href="./main.css">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
-</head>
-<body class="hover-bg">
-        <!-- ! Navbar -->
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+  </head>
+  <body class="hover-bg">
+    <!-- ! Navbar -->
 
-        <nav class=" top-0 w-full justify-between p-2 flex">
-            <!-- <div class="flex-row m-1">
+    <nav class="top-0 w-full justify-between p-2 flex">
+      <!-- <div class="flex-row m-1">
                 <img src="./Assets/Screenshot 2022-07-04 233902.jpg"   width="150px"  alt="" srcset="">
             </div> -->
-            <div class="flex-row root-color sm:mx-10 lg:mx-20  m-1">
-                <a href="/">
-                    <h1 class="text-3xl root-color font-bold font-mono my-1"> < Surya/ ></h1>
-                  </a>
-            </div>
-            <div class="text-xl sm:mx-10 lg:mx-20 font-medium  root-color">
-                <ol class="hidden md:flex m-1 ">
-                    <li class="navBtn"><a  href="/">
-                        <div>Home</div>
-                    </a></li>
-                    <li class="navBtn" ><a href="/education">
-                        <div>Education</div>
-                    </a></li>
-                    <li class="navBtn" ><a href="/projects">
-                        <div>Projects</div>
-                    </a></li>
-                    <li class="navBtn" ><a href="">
-                        <div>About</div>
-                    </a></li>
-                    <li class="navBtn" ><a href="/contact">
-                      <div>Contact Me</div>
-                  </a></li>
-                </ol>
-            </div>
+      <div class="flex-row root-color sm:mx-10 lg:mx-20 m-1">
+        <a href="/">
+          <h1 class="text-3xl root-color font-bold font-mono my-1">
+            < Surya/ >
+          </h1>
+        </a>
+      </div>
+      <div class="text-xl sm:mx-10 lg:mx-20 font-medium root-color">
+        <ol class="hidden md:flex m-1">
+          <li class="navBtn">
+            <a href="/">
+              <div>Home</div>
+            </a>
+          </li>
+          <li class="navBtn">
+            <a href="/education">
+              <div>Education</div>
+            </a>
+          </li>
+          <li class="navBtn">
+            <a href="/projects">
+              <div>Projects</div>
+            </a>
+          </li>
+          <li class="navBtn">
+            <a href="">
+              <div>About</div>
+            </a>
+          </li>
+          <li class="navBtn">
+            <a href="/contact">
+              <div>Contact Me</div>
+            </a>
+          </li>
+        </ol>
+      </div>
 
-            <!--! social-icons -->
+      <!--! social-icons -->
 
-           
-              <!-- ! bar-icon -->
+      <!-- ! bar-icon -->
 
-            <div  class=" root-color md:hidden flex-row m-1 cursor-pointer">
-                <!-- <img  src="./bars.svg"  width="30px" alt="" srcset=""> -->
-                <svg xmlns="http://www.w3.org/2000/svg" id="toggle" class="h-9 w-9" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-                  </svg>
-            </div>
+      <div class="root-color md:hidden flex-row m-1 cursor-pointer">
+        <!-- <img  src="./bars.svg"  width="30px" alt="" srcset=""> -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          id="toggle"
+          class="h-9 w-9"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+      </div>
+    </nav>
 
-        </nav>
+    <!-- ! Mobile View Nav Container -->
 
-        <!-- ! Mobile View Nav Container -->
-
-        <div id="navCon" class=" h-64 text-center hidden md:hidden">
-            <ul class="root-color text-cente cursor-default  text-lg p-2">
-               <a href="/"> <li  class="m-1 p-2 hover:bg-gray-500 hover:text-white ">Home</li></a>
-               <a href="/education"><li class="m-1  p-2 hover:bg-gray-500 hover:text-white">Education</li></a>
-               <a href="/projects"><li class="m-1  p-2 hover:bg-gray-500 hover:text-white">Project</li></a>
-               <a href="/contact"><li class="m-1  p-2 hover:bg-gray-500 hover:text-white">About</li></a>   
-               <a href="/contact"><li class="m-1  p-2 hover:bg-gray-500 hover:text-white">Contact Me</li></a>   
-            </ul>
-        </div>
-
+    <div id="navCon" class="h-64 text-center hidden md:hidden">
+      <ul class="root-color text-cente cursor-default text-lg p-2">
+        <a href="/">
+          <li class="m-1 p-2 hover:bg-gray-500 hover:text-white">Home</li></a
+        >
+        <a href="/education"
+          ><li class="m-1 p-2 hover:bg-gray-500 hover:text-white">
+            Education
+          </li></a
+        >
+        <a href="/projects"
+          ><li class="m-1 p-2 hover:bg-gray-500 hover:text-white">
+            Project
+          </li></a
+        >
+        <a href="/contact"
+          ><li class="m-1 p-2 hover:bg-gray-500 hover:text-white">About</li></a
+        >
+        <a href="/contact"
+          ><li class="m-1 p-2 hover:bg-gray-500 hover:text-white">
+            Contact Me
+          </li></a
+        >
+      </ul>
+    </div>
 
     <!-- ! Projects banner Section -->
 
-    <div class="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 mt-4 
-            lg:px-8 bg-gray-700 bg-blend-overlay"
-             style="background-image: url('./Vectors/project_vector.webp'); ">
-
-        <h1 class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">Projects</h1>
-        <h3 class="mt-6 text-xl text-indigo-100 max-w-3xl">Writing code. Mostly getting it right.</h3>
-
+    <div
+      class="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 mt-4 lg:px-8 bg-gray-700 bg-blend-overlay"
+      style="background-image: url('./Vectors/project_vector.webp')"
+    >
+      <h1
+        class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl"
+      >
+        Projects
+      </h1>
+      <h3 class="mt-6 text-xl text-indigo-100 max-w-3xl">
+        Writing code. Mostly getting it right.
+      </h3>
     </div>
 
     <!-- ! Projects -->
 
     <div id="Projects-container" class="flex flex-wrap justify-center">
-            <!--  ! Render Elemnets From JavaScript -->
+      <!--  ! Render Elemnets From JavaScript -->
     </div>
 
     <!-- ! JavaScript -->
     <script src="./JS/navbar.js"></script>
     <script src="./JS/Projects.js"></script>
-</body>
+  </body>
 </html>
