@@ -44,6 +44,15 @@ const Projects = [
     Code: "window.open('https://github.com/20pa5a1210/Todo-React-Project');",
     Demo: "window.open('https://todo-manager-react.netlify.app/');",
   },
+  {
+    Name: "Netflix Clone",
+    Description:
+      "Netflix Clone is a project developed using Pure HTML5 And CSS3.",
+    Date: "Created on 2022-07-01",
+    TechStack: ["HTML", "CSS"],
+    Code: "window.open('https://github.com/20pa5a1210/Netflix-Clone-Using-CSS.git');",
+    Demo: "window.open('https://netflix-clone-css-tau.vercel.app/');",
+  },
 ];
 
 const Projects_container = document.getElementById("Projects-container");
